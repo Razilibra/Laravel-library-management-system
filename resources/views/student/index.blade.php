@@ -4,10 +4,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h2 class="admin-heading">All Students</h2>
+                    <h2 class="admin-heading">Semua Siswa</h2>
                 </div>
                 <div class="offset-md-6 col-md-2">
-                    <a class="add-new" href="{{ route('student.create') }}">Add Student</a>
+                    <a class="add-new" href="{{ route('student.create') }}">Tambahkan  Siswa</a>
                 </div>
             </div>
             <div class="row">
@@ -16,7 +16,7 @@
                     <table class="content-table">
                         <thead>
                             <th>S.No</th>
-                            <th>Student Name</th>
+                            <th>Nama Siswa</th>
                             <th>Gender</th>
                             <th>Phone</th>
                             <th>Email</th>
@@ -49,7 +49,7 @@
                                 </tr>
                             @empty
                                 <tr>
-                                    <td colspan="8">No Students Found</td>
+                                    <td colspan="8">Tidak ada siswa yang ditemukan</td>
                                 </tr>
                             @endforelse
                         </tbody>

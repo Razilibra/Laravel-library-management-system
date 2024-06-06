@@ -4,10 +4,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <h2 class="admin-heading">All Book Issue</h2>
+                    <h2 class="admin-heading">Semua Edisi Buku</h2>
                 </div>
                 <div class="offset-md-6 col-md-3">
-                    <a class="add-new" href="{{ route('book_issue.create') }}">Add Book Issue</a>
+                    <a class="add-new" href="{{ route('book_issue.create') }}">Tambahkan Edisi Buku</a>
                 </div>
             </div>
             <div class="row">
@@ -15,12 +15,12 @@
                     <table class="content-table">
                         <thead>
                             <th>S.No</th>
-                            <th>Student Name</th>
-                            <th>Book Name</th>
+                            <th>Nama Siswa</th>
+                            <th>Nama Buku</th>
                             <th>Phone</th>
                             <th>Email</th>
-                            <th>Issue Date</th>
-                            <th>Return Date</th>
+                            <th>Tanggal Pembuatan</th>
+                            <th>Tanggal pengembalian</th>
                             <th>Status</th>
                             <th>Edit</th>
                             <th>Delete</th>
@@ -55,7 +55,7 @@
                                 </tr>
                             @empty
                                 <tr>
-                                    <td colspan="10">No Books Issued</td>
+                                    <td colspan="10">Tidak Ada Buku yang Diterbitkan</td>
                                 </tr>
                             @endforelse
                         </tbody>
